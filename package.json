@@ -1,0 +1,20 @@
+{
+  "name": "create-prettierc",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate a default .prettierrc file",
+  "main": "index.js",
+  "bin": {
+    "create-prettierrc": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:all": "node index.js --all",
+    "start:aps": "node index.js --aps"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rkristelijn/create-prettierrc.git"
+  }
+}
