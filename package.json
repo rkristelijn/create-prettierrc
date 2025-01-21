@@ -1,5 +1,5 @@
 {
-  "name": "create-prettierc",
+  "name": "create-prettierrc",
   "version": "1.0.0",
   "description": "A CLI tool to generate a default .prettierrc file",
   "main": "index.js",
