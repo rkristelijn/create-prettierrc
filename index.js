@@ -7,6 +7,7 @@ const { defaultConfig, allConfig, apsConfig } = require('./config');
 const args = process.argv.slice(2);
 const useAllConfig = args.includes('--all');
 const useApsConfig = args.includes('--aps');
+const useKikiConfig = args.includes('--kiki');
 
 let prettierConfig;
 
@@ -16,6 +17,9 @@ switch (true) {
     break;
   case useApsConfig:
     prettierConfig = apsConfig;
+    break;
+  case useKikiConfig:
+    prettierConfig = kikiConfig;
     break;
   default:
     prettierConfig = defaultConfig;

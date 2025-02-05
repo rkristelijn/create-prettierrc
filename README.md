@@ -27,6 +27,11 @@ You can generate a `.prettierrc` file with different configurations using the fo
   npx create-prettierrc --aps
   ```
 
+- [kiki-kanri](https://github.com/kiki-kanri/prettierrc) configuration:
+  ```sh
+  npx create-prettierrc --kiki
+  ```
+
 ## Sensible Defaults
 
 The generated `.prettierrc` file includes the following default settings:
@@ -75,3 +80,34 @@ The generated `.prettierrc` file includes the following settings:
 - `tabWidth`: `2` - Specify the number of spaces per indentation level.
 - `trailingComma`: `'all'` - Print trailing commas wherever possible.
 - `useTabs`: `false` - Indent lines with tabs instead of spaces.
+
+## Kiki Kanri defaults
+
+The generated `.prettierrc` file includes the following settings:
+
+- `endOfLine`: `'lf'` - Specify the end of line character.
+- `multilineArraysWrapThreshold`: `2` - Specify the number of elements in an array before wrapping.
+- `overrides`: - Specify different configurations for different file types.
+  - For JavaScript and TypeScript files:
+    - `printWidth`: `256` - Specify the line length that the printer will wrap on.
+    - `singleQuote`: `true` - Use single quotes instead of double quotes.
+    - `semi`: `true` - Add a semicolon at the end of every statement.
+    - `useTabs`: `true` - Indent lines with tabs instead of spaces.
+    - `tabWidth`: `4` - Specify the number of spaces per indentation level.
+  - For CSS, Sass, and SCSS files:
+    - `semi`: `true` - Add a semicolon at the end of every statement.
+    - `useTabs`: `true` - Indent lines with tabs instead of spaces.
+    - `tabWidth`: `4` - Specify the number of spaces per indentation level.
+  - For HTML and Vue files:
+    - `printWidth`: `128` - Specify the line length that the printer will wrap on.
+    - `singleQuote`: `true` - Use single quotes instead of double quotes.
+    - `semi`: `true` - Add a semicolon at the end of every statement.
+    - `useTabs`: `true` - Indent lines with tabs instead of spaces.
+    - `tabWidth`: `4` - Specify the number of spaces per indentation level.
+  - For JSON and JSONC files:
+    - `useTabs`: `false` - Indent lines with tabs instead of spaces.
+    - `tabWidth`: `2` - Specify the number of spaces per indentation level.
+- `plugins`: `['prettier-plugin-multiline-arrays']` - Use the Prettier plugin for multiline arrays.
+- `semi`: `false` - Do not add a semicolon at the end of every statement.
+- `trailingComma`: `'none'` - Do not print trailing commas.
+
